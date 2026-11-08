@@ -1,0 +1,22 @@
+.slot-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.slot-group__label {
+  color: var(--color-text-primary);
+
+  /* Label/Field */
+  font-family: var(--font-family-base);
+  font-size: var(--text-label-field-size);
+  line-height: var(--text-label-field-line-height);
+  font-weight: var(--text-label-field-weight);
+}
+
+.slot-group__options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--space-8);
+}

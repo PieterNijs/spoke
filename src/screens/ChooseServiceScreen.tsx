@@ -1,20 +1,24 @@
-import { useState } from 'react'
 import { ActionBar } from '../components/ActionBar'
 import { ServiceCard } from '../components/ServiceCard'
 import { TopBar } from '../components/TopBar'
 import { services } from '../data/services'
+import './Screen.css'
 import './ChooseServiceScreen.css'
 
 // Figma: "01 Choose a service" (7:114).
 type ChooseServiceScreenProps = {
+  selectedServiceId: string
+  onSelectService: (serviceId: string) => void
   onBack?: () => void
-  onContinue?: (serviceId: string) => void
+  onContinue?: () => void
 }
 
-export function ChooseServiceScreen({ onBack, onContinue }: ChooseServiceScreenProps) {
-  // Figma shows the first service selected.
-  const [selected, setSelected] = useState(services[0].id)
-
+export function ChooseServiceScreen({
+  selectedServiceId,
+  onSelectService,
+  onBack,
+  onContinue,
+}: ChooseServiceScreenProps) {
   return (
     <div className="screen">
       <TopBar title="Book a repair" step="Step 1 of 3" onBack={onBack} />
@@ -37,14 +41,14 @@ export function ChooseServiceScreen({ onBack, onContinue }: ChooseServiceScreenP
               price={service.price}
               description={service.description}
               tags={service.tags}
-              selected={selected === service.id}
-              onSelect={setSelected}
+              selected={selectedServiceId === service.id}
+              onSelect={onSelectService}
             />
           ))}
         </div>
       </main>
 
-      <ActionBar label="Continue" onClick={() => onContinue?.(selected)} />
+      <ActionBar label="Continue" onClick={onContinue} />
     </div>
   )
 }
