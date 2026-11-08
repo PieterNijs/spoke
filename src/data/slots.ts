@@ -21,3 +21,7 @@ export const times: Slot[] = [
   { value: '16:30', label: '16:30' },
   { value: '17:30', label: '17:30' },
 ]
+
+export function getSlotLabel(slots: Slot[], value: string): string {
+  return slots.find((slot) => slot.value === value)?.label ?? value
+}

@@ -7,12 +7,21 @@ type ActionBarProps = {
   label: string
   onClick?: () => void
   disabled?: boolean
+  /** Use "submit" when the Action bar sits inside a form */
+  type?: 'button' | 'submit'
 }
 
-export function ActionBar({ label, onClick, disabled }: ActionBarProps) {
+export function ActionBar({ label, onClick, disabled, type = 'button' }: ActionBarProps) {
   return (
     <footer className="action-bar">
-      <Button label={label} variant="primary" fullWidth onClick={onClick} disabled={disabled} />
+      <Button
+        label={label}
+        variant="primary"
+        fullWidth
+        type={type}
+        onClick={onClick}
+        disabled={disabled}
+      />
     </footer>
   )
 }
