@@ -1,0 +1,68 @@
+/*
+ * Mobile screen: Top bar, scrolling content, Action bar pinned to the bottom.
+ * On wider viewports it stays at the width of the Figma frame (390px), centred.
+ */
+.screen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 390px;
+  min-height: 100svh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: var(--color-surface);
+}
+
+@media (min-width: 392px) {
+  .screen {
+    border-inline: 1px solid var(--color-border);
+  }
+}
+
+.screen__content {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  gap: var(--space-16);
+  padding: var(--space-20);
+}
+
+.screen__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.screen__title {
+  margin: 0;
+  color: var(--color-text-primary);
+
+  /* Screen/Title */
+  font-family: var(--font-family-base);
+  font-size: var(--text-screen-title-size);
+  line-height: var(--text-screen-title-line-height);
+  font-weight: var(--text-screen-title-weight);
+}
+
+.screen__subtitle {
+  margin: 0;
+  color: var(--color-text-muted);
+
+  /* Card/Body */
+  font-family: var(--font-family-base);
+  font-size: var(--text-card-body-size);
+  line-height: var(--text-card-body-line-height);
+  font-weight: var(--text-card-body-weight);
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+/* Keep the main action in reach while the list scrolls */
+.screen > .action-bar {
+  position: sticky;
+  bottom: 0;
+}
