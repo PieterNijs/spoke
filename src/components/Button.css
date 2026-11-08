@@ -1,0 +1,38 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: var(--space-12) var(--space-20);
+  border: 0;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  white-space: nowrap;
+
+  /* Label/Button */
+  font-family: var(--font-family-base);
+  font-size: var(--text-label-button-size);
+  line-height: var(--text-label-button-line-height);
+  font-weight: var(--text-label-button-weight);
+}
+
+.button--primary {
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+}
+
+.button--secondary {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+.button--full-width {
+  width: 100%;
+}
+
+/* Keyboard focus (not in Figma, needed for accessibility) */
+.button:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}

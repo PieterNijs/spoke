@@ -1,0 +1,87 @@
+.service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-8);
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--space-16);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  text-align: left;
+  cursor: pointer;
+}
+
+/*
+ * State=Selected: 2px brand border.
+ * Drawn as a 1px border plus a 1px inset ring, so the card keeps the same size
+ * and the list doesn't jump when the selection changes.
+ */
+.service-card[data-selected='true'] {
+  border-color: var(--color-brand);
+  box-shadow: inset 0 0 0 1px var(--color-brand);
+}
+
+/* Keyboard focus (not in Figma, needed for accessibility) */
+.service-card:has(.service-card__input:focus-visible) {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* Visually hidden, still reachable by keyboard and screen readers */
+.service-card__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.service-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  width: 100%;
+  color: var(--color-text-primary);
+
+  /* Card/Title */
+  font-family: var(--font-family-base);
+  font-size: var(--text-card-title-size);
+  line-height: var(--text-card-title-line-height);
+  font-weight: var(--text-card-title-weight);
+}
+
+.service-card__title {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.service-card__price {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.service-card__description {
+  width: 100%;
+  color: var(--color-text-muted);
+  overflow-wrap: break-word;
+
+  /* Card/Body */
+  font-family: var(--font-family-base);
+  font-size: var(--text-card-body-size);
+  line-height: var(--text-card-body-line-height);
+  font-weight: var(--text-card-body-weight);
+}
+
+.service-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}

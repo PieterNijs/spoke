@@ -1,0 +1,30 @@
+.summary-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-16);
+  width: 100%;
+  font-family: var(--font-family-base);
+}
+
+.summary-row__label {
+  flex-shrink: 0;
+  margin: 0;
+  color: var(--color-text-muted);
+
+  /* Card/Caption */
+  font-size: var(--text-card-caption-size);
+  line-height: var(--text-card-caption-line-height);
+  font-weight: var(--text-card-caption-weight);
+}
+
+.summary-row__value {
+  margin: 0;
+  color: var(--color-text-primary);
+  text-align: right;
+
+  /* Card/Body */
+  font-size: var(--text-card-body-size);
+  line-height: var(--text-card-body-line-height);
+  font-weight: var(--text-card-body-weight);
+}
