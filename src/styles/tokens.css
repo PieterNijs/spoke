@@ -21,6 +21,7 @@
   --color-on-brand: #ffffff;        /* Text on brand fill */
   --color-tag-background: #fcebe4;  /* Fill */
   --color-tag-text: #b23e16;        /* Text */
+  --color-text-error: #d00000;      /* Text + stroke: Input State=Error (5.7:1 on white, WCAG AA) */
 
   /* ---------- Space (gap / padding) ---------- */
   --space-4: 4px;
@@ -76,4 +77,10 @@
   --text-label-tag-size: 13px;
   --text-label-tag-line-height: 18px;
   --text-label-tag-weight: var(--font-weight-medium);
+
+  /* Input error message. Not a Figma text style yet: values taken from the
+     error text in the Input component (State=Error). */
+  --text-input-error-size: 11px;
+  --text-input-error-line-height: 18px;
+  --text-input-error-weight: var(--font-weight-medium);
 }

@@ -46,3 +46,25 @@
   border-color: var(--color-brand);
   box-shadow: inset 0 0 0 1px var(--color-brand);
 }
+
+/* State=Error: error-coloured border and a message under the field */
+.input[data-error='true'] .input__field {
+  border-color: var(--color-text-error);
+}
+
+/* Focus while in error: keep the error colour, thicken it like Focus does */
+.input[data-error='true'] .input__field:focus {
+  border-color: var(--color-text-error);
+  box-shadow: inset 0 0 0 1px var(--color-text-error);
+}
+
+.input__error {
+  margin: 0;
+  color: var(--color-text-error);
+
+  /* Input error message */
+  font-family: var(--font-family-base);
+  font-size: var(--text-input-error-size);
+  line-height: var(--text-input-error-line-height);
+  font-weight: var(--text-input-error-weight);
+}
