@@ -1,0 +1,79 @@
+/*
+ * Spoke design tokens
+ * Source: Figma file "Spoke booking card", variable collection "Spoke" (mode: Default)
+ * and the file's local text styles.
+ *
+ * Naming: the Figma variable path with "/" replaced by "-".
+ *   color/text/primary  ->  --color-text-primary
+ *   space/16            ->  --space-16
+ *   radius/md           ->  --radius-md
+ *
+ * Change a value in Figma first, then update it here. Don't use raw values in components.
+ */
+
+:root {
+  /* ---------- Color ---------- */
+  --color-surface: #ffffff;         /* Fill: frames, shapes */
+  --color-text-primary: #1a1a1a;    /* Text */
+  --color-text-muted: #6b6660;      /* Text */
+  --color-border: #e4e0d8;          /* Stroke */
+  --color-brand: #e8552b;           /* Fill + stroke */
+  --color-on-brand: #ffffff;        /* Text on brand fill */
+  --color-tag-background: #fcebe4;  /* Fill */
+  --color-tag-text: #b23e16;        /* Text */
+
+  /* ---------- Space (gap / padding) ---------- */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+
+  /* ---------- Radius ---------- */
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* ---------- Typography (from Figma text styles) ---------- */
+  --font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Screen/Title */
+  --text-screen-title-size: 28px;
+  --text-screen-title-line-height: 34px;
+  --text-screen-title-weight: var(--font-weight-semibold);
+
+  /* Card/Title */
+  --text-card-title-size: 20px;
+  --text-card-title-line-height: 28px;
+  --text-card-title-weight: var(--font-weight-semibold);
+
+  /* Card/Body */
+  --text-card-body-size: 15px;
+  --text-card-body-line-height: 22px;
+  --text-card-body-weight: var(--font-weight-regular);
+
+  /* Card/Caption */
+  --text-card-caption-size: 14px;
+  --text-card-caption-line-height: 20px;
+  --text-card-caption-weight: var(--font-weight-regular);
+
+  /* Label/Button */
+  --text-label-button-size: 16px;
+  --text-label-button-line-height: 24px;
+  --text-label-button-weight: var(--font-weight-semibold);
+
+  /* Label/Field */
+  --text-label-field-size: 14px;
+  --text-label-field-line-height: 20px;
+  --text-label-field-weight: var(--font-weight-medium);
+
+  /* Label/Tag */
+  --text-label-tag-size: 13px;
+  --text-label-tag-line-height: 18px;
+  --text-label-tag-weight: var(--font-weight-medium);
+}
