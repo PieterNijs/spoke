@@ -1,0 +1,131 @@
+/* Values copied straight from Figma "Frame 47". No tokens, as in the design. */
+.frame-47 {
+  position: relative;
+  width: 360px;
+  height: 248px;
+  overflow: hidden;
+  border: 1px solid #e4e0d8;
+  border-radius: 16px;
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.frame-47 p {
+  position: absolute;
+  margin: 0;
+}
+
+/* Text 3 */
+.frame-47__text-3 {
+  top: 24px;
+  left: 24px;
+  width: 310px;
+  color: #1a1a1a;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+/* Text 4 */
+.frame-47__text-4 {
+  top: 56px;
+  left: 24px;
+  width: 310px;
+  color: #6b6660;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+/* Rectangle 12 */
+.frame-47__rectangle-12 {
+  position: absolute;
+  top: 95px;
+  left: 24px;
+  width: 67px;
+  height: 26px;
+  border-radius: 13px;
+  background: #fcebe4;
+}
+
+/* Text 5 */
+.frame-47__text-5 {
+  top: 99px;
+  left: 36px;
+  color: #b23e16;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Rectangle 13 */
+.frame-47__rectangle-13 {
+  position: absolute;
+  top: 95px;
+  left: 99px;
+  width: 76px;
+  height: 26px;
+  border-radius: 13px;
+  background: #fcebe4;
+}
+
+/* Text 6 */
+.frame-47__text-6 {
+  top: 99px;
+  left: 111px;
+  color: #b23e16;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Text 7 */
+.frame-47__text-7 {
+  top: 94px;
+  left: 298px;
+  color: #1a1a1a;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Text 8 */
+.frame-47__text-8 {
+  top: 138px;
+  left: 24px;
+  width: 310px;
+  color: #6b6660;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/* Rectangle 14 */
+.frame-47__rectangle-14 {
+  position: absolute;
+  top: 174px;
+  left: 24px;
+  width: 310px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e8552b;
+}
+
+/* Text 9 */
+.frame-47__text-9 {
+  top: 186px;
+  left: 118px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Preview page at /#frame-47 (not part of the Figma frame) */
+.frame-47-preview {
+  padding: var(--space-24);
+}

@@ -1,0 +1,160 @@
+/* Components overview page (/#components). Uses the design tokens throughout. */
+.components-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: var(--space-24) var(--space-20);
+  font-family: var(--font-family-base);
+  color: var(--color-text-primary);
+}
+
+.components-page__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  margin-bottom: var(--space-24);
+}
+
+.components-page__title {
+  margin: 0;
+
+  /* Screen/Title */
+  font-size: var(--text-screen-title-size);
+  line-height: var(--text-screen-title-line-height);
+  font-weight: var(--text-screen-title-weight);
+}
+
+.components-page__intro,
+.components-page__note {
+  margin: 0;
+  color: var(--color-text-muted);
+
+  /* Card/Body */
+  font-size: var(--text-card-body-size);
+  line-height: var(--text-card-body-line-height);
+  font-weight: var(--text-card-body-weight);
+}
+
+.components-page__toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.components-page__toc a {
+  display: inline-block;
+  padding: var(--space-4) var(--space-12);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-primary);
+  text-decoration: none;
+
+  /* Label/Tag */
+  font-size: var(--text-label-tag-size);
+  line-height: var(--text-label-tag-line-height);
+  font-weight: var(--text-label-tag-weight);
+}
+
+.components-page__toc a:hover {
+  border-color: var(--color-text-muted);
+}
+
+.components-page__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  padding-block: var(--space-24);
+  border-top: 1px solid var(--color-border);
+  scroll-margin-top: var(--space-16);
+}
+
+.components-page__section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-8) var(--space-12);
+}
+
+.components-page__section-title {
+  margin: 0;
+
+  /* Card/Title */
+  font-size: var(--text-card-title-size);
+  line-height: var(--text-card-title-line-height);
+  font-weight: var(--text-card-title-weight);
+}
+
+.components-page__file {
+  color: var(--color-text-muted);
+  font-size: var(--text-card-caption-size);
+  line-height: var(--text-card-caption-line-height);
+}
+
+.components-page__figma-link {
+  margin-left: auto;
+  color: var(--color-tag-text);
+
+  /* Label/Field */
+  font-size: var(--text-label-field-size);
+  line-height: var(--text-label-field-line-height);
+  font-weight: var(--text-label-field-weight);
+}
+
+.components-page__specimens {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--space-24);
+}
+
+.components-page__specimen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  margin: 0;
+  min-width: 0;
+}
+
+/* Width of the Figma mobile frame */
+.components-page__specimen--wide {
+  width: 100%;
+  max-width: 390px;
+}
+
+.components-page__specimen--full {
+  width: 100%;
+}
+
+.components-page__specimen-label {
+  color: var(--color-text-muted);
+
+  /* Card/Caption */
+  font-size: var(--text-card-caption-size);
+  line-height: var(--text-card-caption-line-height);
+  font-weight: var(--text-card-caption-weight);
+}
+
+.components-page__stage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.components-page__specimen--wide .components-page__stage {
+  align-items: stretch;
+}
+
+.components-page__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
+
+.components-page__stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  margin: 0;
+}
