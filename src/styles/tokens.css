@@ -78,9 +78,18 @@
   --text-label-tag-line-height: 18px;
   --text-label-tag-weight: var(--font-weight-medium);
 
-  /* Input error message. Not a Figma text style yet: values taken from the
-     error text in the Input component (State=Error). */
+  /* Input/Error */
   --text-input-error-size: 11px;
   --text-input-error-line-height: 18px;
   --text-input-error-weight: var(--font-weight-medium);
+
+  /* ---------- Elevation (from Figma effect styles) ---------- */
+
+  /* Shadow/Raised: for things that lift off the page (Service card hover) */
+  --shadow-raised: 0 var(--space-8) var(--space-24)
+    color-mix(in srgb, var(--color-text-primary) 12%, transparent);
+
+  /* ---------- Motion (Figma variables motion/duration/fast, motion/ease/out) ---------- */
+  --motion-duration-fast: 150ms;
+  --motion-ease-out: cubic-bezier(0.2, 0, 0, 1);
 }
