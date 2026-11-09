@@ -37,6 +37,11 @@
   opacity: 1;
 }
 
+/* Hide the placeholder while the field has focus (the label stays visible) */
+.input__field:focus::placeholder {
+  color: transparent;
+}
+
 /*
  * State=Focus: 2px brand border.
  * Drawn as a 1px border plus a 1px inset ring, so the field doesn't grow on focus.
